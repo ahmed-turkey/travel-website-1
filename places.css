@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient( 45deg, rgb(69, 96, 97),rgb(30, 32, 32));
+}
+header {
+    position: static;
+
+}
+header a {
+    color: rgb(255, 251, 0);
+    font-size: 20px;
+    padding: 12px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  header a:hover {
+      background-color: rgba(255, 251, 0, 0.8);
+  color: rgb(27, 25, 25);
+  border-radius: 6px;
+  }
+main li img{
+    width: 300px;
+    height: 280px;
+}
+main ul { 
+    width: 800px;
+    margin: 0px auto;
+}
