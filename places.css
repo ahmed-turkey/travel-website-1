@@ -30,7 +30,7 @@ main li img{
     height: 280px;
 }
 main ul { 
-    width: 1200px;
+    width: 932px;
     margin: 0px auto 40px auto;
     display: grid;
     grid-template-columns:  1fr 1fr;
