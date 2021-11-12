@@ -1,3 +1,6 @@
+html {
+    width: 1200px;
+}
 body {
    
     background: linear-gradient( 45deg, rgb(69, 96, 97),rgb(30, 32, 32));
