@@ -1,5 +1,11 @@
+html {
+    width: 100%;
+    box-sizing: content-box;
+}
 body {
+   
     background: linear-gradient( 45deg, rgb(69, 96, 97),rgb(30, 32, 32));
+    
 }
 header {
     position: static;
@@ -16,6 +22,8 @@ header a {
       background-color: rgba(255, 251, 0, 0.8);
       color: rgb(27, 25, 25);
       border-radius: 6px;
+    }
+    main {
     }
 main li img{
     width: 300px;
