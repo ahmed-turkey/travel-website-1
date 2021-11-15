@@ -1,5 +1,5 @@
 #hero {
-  height: 800px;
+  height: 50rem;
   background-image: url("images/places/ocean.jpg");
   background-position: center;
   background-size: cover;
@@ -7,18 +7,18 @@
 #hero-content {
  
   background-color: rgba(51, 47, 47, 0.8);
-  box-shadow: 2px 4px 8px rgb(52, 70, 52,0.8);
+  box-shadow: 0.1rem 0.2rem 0.4rem rgb(52, 70, 52,0.8);
   border-radius: 8px;
   text-align: center;
-  padding: 50px 0;
+  padding: 3rem 0;
   margin: 0 auto;
   position: relative;
-  top: 200px;
-  width: 700px;
+  top: 15rem;
+  width: 38rem;
 }
 #hero-content h1 {
   color: white;
-  font-size: 50px;
+  font-size: 3rem;
   text-transform: uppercase;
   font-family: "raleway", sans-serif;
   margin: 0%;
@@ -26,37 +26,122 @@
 #hero-content p {
   color: white;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 35px;
+  margin-bottom: 2rem;
 }
 #hero-content a {
   background-color: yellow;
-  font-size: 32;
-  padding: 12px 24px;
+  font-size: 1.2rem;
+  padding: 0.7rem 1rem;
   color: black;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.8);
 }
 #hero-content a:hover {
   background-color: rgb(213, 255, 24);
 }
-header a {
+#logo a {
   color: rgb(255, 251, 0);
-  font-size: 20px;
-  padding: 12px;
+  font-size: 1.7rem;
+  padding: 0.7rem;
   text-decoration: none;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
-header nav a:hover {
+#logo a:hover {
     background-color: rgba(255, 251, 0, 0.8);
 color: rgb(27, 25, 25);
 border-radius: 6px;
 }
+#first a { color:rgb(5, 5, 5) ;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgb(237, 252, 25);
+  padding:0.4rem ;
+
+}
+#first a:hover {
+  background-color: rgb(179, 255, 0);
+}
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 3rem;
+
+}
+.menu-btn span {
+  /* display: block; */
+  width: 100%;
+  height: 0.3rem;
+  background-color: rgb(255, 255, 255);
+}
+ #side-drawer{ 
+   display:none;
+   position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(94, 100, 87);
+  display: none;
+  top: 0;
+  left: 0;
+  z-index:1;
+
+} 
+
+#side-drawer:target  { display: block;
+}
+#side-drawer header {
+  background-color: rgb(231, 235, 43);
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+#side-drawer nav ul {
+  
+background-color: rgb(96, 175, 73);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: right;
+  align-items: center;
+  top: 8rem;
+  margin: 0 auto;
+  height: 8rem;
+  width: 13rem;
+  padding-top: 2rem;
+  border-radius: 8px;
+  box-shadow:0.1rem 0.1rem 0.4rem rgb(0, 0, 0);
+  /* box-shadow: -1rem 1rem -4rem white; */
+   
+  
+ 
+  
+}
+#side-drawer li  a{
+  text-decoration: none;
+background-color: rgb(207, 250, 106);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: 6px;
+  box-shadow: 0.1rem 0.1rem 0.1rem white;
+
+
+}
+#side-drawer li  a:hover {
+  background-color: rgb(188, 228, 42);
+}
 .destination img {
-  height: 200px;
+  height: 12.5rem;
   width: 100%;
   border-radius: 10px;
   box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.8);
@@ -67,19 +152,19 @@ object-fit: cover;
     display: flex;
     width: 90%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
     justify-content: center;
     flex-direction: row;
     flex-wrap:nowrap;
 }
 .destination {
-    margin: 0px 20px;
+    margin: 0px 1rem;
 }
 .destination p {
     text-transform: uppercase;
     text-align: center;
     color: rgb(73, 66, 66);
-    margin: 10px 0px;
+    margin: 0.4rem 0.3rem;
     font-size: 20px;
 }
 .destination strong {
@@ -88,11 +173,22 @@ object-fit: cover;
 #highlights h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 40x;
+    font-size: 2rem;
    color: rgb(60, 65, 65); 
 
 
 }
-#highlights{ padding: 30px;
+#highlights{ padding: 1.2rem;
   background: linear-gradient(0deg,rgb(189, 243, 243),rgb(6, 129, 129));
+}
+@media ( max-width: 40rem)
+{
+  .menu-btn {
+  display: flex;
+}
+#first {
+  display: none;
+}
+
+
 }
